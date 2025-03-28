@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="expense-form" class="form-container">
+            <input type="number" id="monthly-income" placeholder="Monthly Income">
+            <input type="number" id="spending-limit" placeholder="Spending Limit">
+            <input type="text" id="expense-name" placeholder="Expense Name">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <button type="button" id="add-expense-btn">Add Expense</button>
+        </form>
+
+        <section class="expenses-container">
+            <ul id="expenses-list"></ul>
+        </section>
+
+        <section class="total-container">
+            <h2>Total: $<span id="total-amount">0</span></h2>
+        </section>
+
+        <p id="warning-message" class="warning">Spending limit reached! Stop spending more money.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
